@@ -1,0 +1,40 @@
+pipeline {
+
+    agent any
+
+    stages {
+
+        stage('API Tests') {
+
+            steps {
+
+                dir('api-automation') {
+
+                    bat 'mvn test'
+
+                }
+            }
+        }
+
+        stage('UI Tests') {
+
+            steps {
+
+                dir('ui-automation') {
+
+                    bat 'npx playwright test'
+
+                }
+            }
+        }
+    }
+
+    post {
+
+        always {
+
+            echo 'Pipeline Execution Completed'
+
+        }
+    }
+}
