@@ -4,13 +4,15 @@
 
     <test name="API Tests">
 
-        <classes>
+	<classes>
 
-            <class name="tests.GetUsersTest"/>
+   	 <class name="tests.GetUsersTest"/>
 
-            <class name="tests.PostUserTest"/>
+   	 <class name="tests.PostUserTest"/>
 
-        </classes>
+   	 <class name="tests.DatabaseConnectionTest"/>
+
+	</classes>
 
     </test>
 
