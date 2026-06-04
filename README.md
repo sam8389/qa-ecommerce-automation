@@ -1,3 +1,4 @@
+![QA Automation Pipeline](https://github.com/sam8389/qa-ecommerce-automation/actions/workflows/playwright.yml/badge.svg)
 \# QA E-Commerce Automation Framework
 
 
